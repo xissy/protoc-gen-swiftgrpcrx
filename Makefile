@@ -6,7 +6,7 @@ build:
 	go build -o protoc-gen-swiftgrpcrx main.go
 
 install:
-	sudo cp protoc-gen-swiftgrpcrx /usr/local/bin
-
+	go install
+	
 test:
 	go test -p 1 -race -cover -v ./...
